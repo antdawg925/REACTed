@@ -46,7 +46,7 @@ const FloatChart = () => {
 
     return (
         <div>
-            <h1 style={{textAlign:"center", textDecoration:"underline"}}>Float Chart</h1>
+            {/* <h1 style={{textAlign:"center", textDecoration:"underline"}}>Float Chart</h1> */}
             {
                 floatData ? (
                     <div>

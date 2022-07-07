@@ -1,11 +1,11 @@
 .form{
     border: 2px rgb(3, 233, 106) solid;
     margin: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin-top: 5vh;
     margin-bottom: 15vh;
     /* width: 90vw; */
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     box-shadow: rgba(45, 247, 45, 0.932) 0px 54px 55px, rgba(19, 241, 19, 0.938) 0px -12px 30px, rgba(3, 211, 3, 0.384) 0px 4px 6px, rgba(36, 241, 9, 0.692) 0px 12px 13px, rgba(9, 245, 21, 0.09) 0px -3px 5px;
     background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
     min-width: fit-content;
@@ -30,5 +30,15 @@
     transform: translate(-50%, -50%); 
     margin-top: 2rem;
 
+}
+.header{
+    text-align: center;
+    background-color: rgb(116, 250, 255);
+    margin-top: 0%;
+    height: 4rem;
+    padding-top: 1rem;
+}
+h1 , h3{
+    padding-left: 1rem;
 }
 

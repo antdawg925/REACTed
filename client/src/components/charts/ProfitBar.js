@@ -50,7 +50,7 @@ const ProfitBar = () => {
 
     return (
         <div>
-            <h1 style={{textAlign:"center", textDecoration:"underline"}}>Trade Value Chart</h1>
+            {/* <h1 style={{textAlign:"center", textDecoration:"underline"}}>Profit Chart</h1> */}
             {
                 profitData ? (
                     <div>

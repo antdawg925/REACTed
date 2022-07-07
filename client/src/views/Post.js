@@ -56,18 +56,18 @@ const Post = () => {
 
                 <div className="flex">
                     <div className="input">
-                        <h4>Buy price:</h4>
+                        <h4>Buy Price:</h4>
                         <input type="number" onChange={(e) => setBought(e.target.value)} value={bought} />
                     </div>
                     <div className="input">
-                        <h4>Sell price:</h4>
+                        <h4>Sell Price:</h4>
                         <input type="number" onChange={(e) => setSold(e.target.value)} value={sold} />
                     </div>
                 </div>
                 <div className="flex">
 
                     <div className="input">
-                        <h4 >Position size:</h4>
+                        <h4 >Position Size:</h4>
                         <input type="number" onChange={(e) => setSize(e.target.value)} value={size} /> <br />
                     </div>
 

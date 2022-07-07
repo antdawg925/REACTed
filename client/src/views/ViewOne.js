@@ -14,7 +14,7 @@ const ViewOne = () => {
     useEffect(() => {
         axios.get("http://localhost:8000/api/getOne/" + id)
             .then(res => {
-                // console.log(res.data, "VIEW ONE AXIOS");
+                console.log(res.data, "VIEW ONE AXIOS");
                 setTrade(res.data)
             })
             .catch(err => console.log(err))
@@ -28,6 +28,7 @@ const ViewOne = () => {
             <h1> Bought: {trade.bought} </h1>
             <h1> Sold: {trade.sold} </h1>
             <h1> Float: {trade.float} </h1>
+            <h1> Sector: {trade.sector} </h1>
             <h3>profit = {(trade.sold - trade.bought)* trade.size}</h3>
             <button className="button"onClick={() => navigate(-1)}>Back</button>
         </div>

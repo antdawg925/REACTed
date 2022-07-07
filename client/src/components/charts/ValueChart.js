@@ -3,7 +3,7 @@ import axios from "axios"
 import { Line } from "react-chartjs-2"
 import { Chart as ChartJS } from "chart.js/auto"
 
-const ValueCart = () => {
+const ValueChart = () => {
     const [tradeValueData, setTradeValueData] = useState()
 
     useEffect(() => {
@@ -42,7 +42,7 @@ const ValueCart = () => {
 
     return (
         <div>
-            <h1 style={{textAlign:"center", textDecoration:"underline"}}>Trade Value Chart</h1>
+            {/* <h1 style={{textAlign:"center", textDecoration:"underline"}}>Trade Value Chart</h1> */}
             {
                 tradeValueData ? (
                     <div>
@@ -53,4 +53,4 @@ const ValueCart = () => {
         </div>
     )
 }
-export default ValueCart
+export default ValueChart
