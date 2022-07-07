@@ -33,10 +33,12 @@
 }
 .header{
     text-align: center;
-    background-color: rgb(116, 250, 255);
+    /* background-color: rgb(116, 250, 255); */
     margin-top: 0%;
     height: 4rem;
     padding-top: 1rem;
+    border-bottom: 4px turquoise solid;
+    box-shadow: 0 10px 10px -3px gray
 }
 h1 , h3{
     padding-left: 1rem;

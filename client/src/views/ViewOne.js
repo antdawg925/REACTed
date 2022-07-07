@@ -24,12 +24,13 @@ const ViewOne = () => {
         <div className="form">
             {/* {JSON.stringify(trade)} */}      
             <h1> Ticker: {trade.ticker} </h1><br/>
-            <h1> Size: {trade.size} </h1>
-            <h1> Bought: {trade.bought} </h1>
-            <h1> Sold: {trade.sold} </h1>
+            <h1> Size: {trade.size} shares</h1>
+            <h1> Bought: ${trade.bought} </h1>
+            <h1> Sold: ${trade.sold} </h1>
             <h1> Float: {trade.float} </h1>
             <h1> Sector: {trade.sector} </h1>
-            <h3>profit = {(trade.sold - trade.bought)* trade.size}</h3>
+            <h1> Volume: {trade.volume} </h1>
+            <h3>profit = ${Math.round((trade.sold - trade.bought)* trade.size)}</h3>
             <button className="button"onClick={() => navigate(-1)}>Back</button>
         </div>
     )

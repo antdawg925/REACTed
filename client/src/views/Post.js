@@ -40,7 +40,7 @@ const Post = () => {
     return (
         <div style={{}}>
             <form className="form" onSubmit={(e) => postTrade(e)}>
-                <h2 style={{ textAlign: "center" }}>Lets post a trade now!</h2>
+                <h1 className="header">Lets post a trade now!</h1>
 
                 <div className="flex">
                     <div className="input">

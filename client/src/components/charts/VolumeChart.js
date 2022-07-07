@@ -3,31 +3,38 @@ import axios from "axios"
 import { Line } from "react-chartjs-2"
 import { Chart as ChartJS } from "chart.js/auto"
 
-const MoneyRotated = () => {
-    const [moneyRotated, setMoneyRotated] = useState()
+const VolumeChart = () => {
+    const [volumeData, setVolumeData] = useState()
 
     useEffect(() => {
         axios.get("http://localhost:8000/api/getAll")
             .then(res => {
-                let moneyTot=[]
-                const getMoneyTot = (data) => {
+                let arrAvg=[]
+                const getArrAvg = (data) => {
                     let value=0
                     for(let i = 0; i<data.length; i++){
-                        value += (data[i].bought*data[i].size)
-                        moneyTot.push(value)
+                        value += (data[i].volume)
+                        arrAvg.push(value)
                     }
                     return value  
                 }
-                getMoneyTot(res.data)
-                setMoneyRotated({
-                    labels: res.data.map((trade, idx) => (idx+1)),
+                getArrAvg(res.data)
+                setVolumeData({
+                    labels: res.data.map((ticker, idx) => ticker.ticker),
                     datasets: [{
-                        label: "Total value of trades $",
-                        data: moneyTot.map((value, idx) => ( value)),
+                        label: "Volume",
+                        data: res.data.map((ticker, idx) => ( ticker.volume)),
                         backgroundColor: ["green"],
                         borderColor: "white",
                         borderWidth: 2
+                    }, {
+                        label: "Average Volume",
+                        data: arrAvg.map((vol, idx) => ( vol)/(idx+1)),
+                        backgroundColor: ["maroon"],
+                        borderColor: "grey",
+                        borderWidth: 2
                     }]
+
                 })
             })
             .catch(err => console.log("errr", err));
@@ -37,13 +44,13 @@ const MoneyRotated = () => {
         <div>
             {/* <h1 style={{textAlign:"center", textDecoration:"underline"}}>Trade Value Chart</h1> */}
             {
-                moneyRotated ? (
+                volumeData ? (
                     <div>
-                        <Line data={moneyRotated} />
+                        <Line data={volumeData} />
                     </div>
-                ) : "Loading Money Data"
+                ) : "Loading trade data"
             }
         </div>
     )
 }
-export default MoneyRotated
+export default VolumeChart
