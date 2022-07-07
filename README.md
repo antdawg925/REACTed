@@ -31,7 +31,7 @@ to run server in your command shell parallel to the package.json
 
 
 ------------------------------------------------- MongDB -----------------------------------------------------
-Assuming you have instalation of MongoDB to you computer. Create an instance of a database and include the name 
+Assuming you have MongoDB installed to your computer. Create an instance of a database and include the name 
 of that database in the server.js file line 5 const DB_NAME = " "
 
 
