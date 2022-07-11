@@ -1,7 +1,6 @@
 ### This application is written in JavaScript to handle the front end and the backend as well using MongoDB as the database.
 
-### To run this application requires installing the packages required to run the Express server and React(JS)-app 
-and have terminals running for the Express server and React app simultaniously. 
+### To run this application requires installing the packages required to run the Express server and React(JS)-app and have terminals running for the Express server and React app simultaniously. 
 
 ## -------------------------------------- Install React Packages ---------------------------------------
 
