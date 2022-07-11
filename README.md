@@ -17,7 +17,7 @@ Need to install react-router-dom which allows front end routes to work
 2. `npm i react-router-dom`
 
 Tailwind was used to customize front end, may or may need to be installed. \
-3. `npm i -D tailwindcss`
+3. `npm i -D tailwindcss` \
 4. `npx tailwindcss init`
 
 To start React in your command shell parallel to the package.json
