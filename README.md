@@ -3,7 +3,7 @@
 ### To run this application requires installing the packages required to run the Express server and React(JS)-app 
 and have terminals running for the Express server and React app simultaniously. 
 
-## ---------------------------------------- Install React Packages ----------------------------------------
+## -------------------------------------- Install React Packages ---------------------------------------
 
 ### First you must install node_modules which is not posted to github because .gitignore
 ### To install node_modules cd into "client-master" folder and all packages required.
@@ -23,7 +23,7 @@ Tailwind was used to customize front end, may or may need to be installed. \
 To start React in your command shell parallel to the package.json
 1. `npm start`
 
-## ---------------------------------------- Install Server Packages ---------------------------------------
+## -------------------------------------- Install Server Packages --------------------------------------
 
 ### There are only three packages required to run this server, Cors, Express, and Mongoose which can be installed automatically with npm.
 1. `npm i`
