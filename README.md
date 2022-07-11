@@ -34,8 +34,7 @@ To start React in your command shell parallel to the package.json
 
 ## ---------------------------------------------- MongDB -----------------------------------------------
 
-### Assuming you have MongoDB installed to your computer. Create an instance of a database and include the name 
-of that database in the server.js file line 5 const DB_NAME = " "
+### Assuming you have MongoDB installed to your computer. Create an instance of a database and include the name of that database in the server.js file line 5 const DB_NAME = " "
 
 
 Thanks for stopping by!! :)
